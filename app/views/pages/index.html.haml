@@ -1,7 +1,7 @@
 %h1 Get a PDF from a .pages document
 %p Give us a link to a .pages document, you'll get the PDF version back, if we can find it.
 
-= form_tag "/pages/download" do
+= form_tag "/pages/download", :method => :get do
   = label_tag "URL"
   = text_field_tag :url
 
