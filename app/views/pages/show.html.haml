@@ -1,0 +1,14 @@
+%h1 Here's your data
+
+%div
+  You asked us to fetch a document from:
+  = link_to @page.url, @page.url
+  
+
+%div
+  = link_to "Download the PDF version here", fetch_pdf_path(:url => @page.url)
+
+%div
+  = link_to "Fetch me another one", root_path
+
+
